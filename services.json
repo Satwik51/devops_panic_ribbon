@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "name": "API Gateway",
+      "healthCheckUrl": "http://localhost:8080/health",
+      "restartScriptPath": "restart-api-gateway.bat"
+    },
+    {
+      "name": "User Service",
+      "healthCheckUrl": "http://localhost:8081/health",
+      "restartScriptPath": "restart-user-service.bat"
+    },
+    {
+      "name": "Order Service",
+      "healthCheckUrl": "http://localhost:8082/health",
+      "restartScriptPath": "restart-order-service.bat"
+    },
+    {
+      "name": "Payment Service",
+      "healthCheckUrl": "http://localhost:8083/health",
+      "restartScriptPath": "restart-payment-service.bat"
+    }
+  ]
+}
+
